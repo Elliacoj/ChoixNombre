@@ -65,3 +65,19 @@ body {
     padding-top: 1%;
     padding-bottom: 1%;
 }
+
+@media screen and (max-width: 1050px){
+    #newGame, #valider {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #jeu, #liste {
+        width: 100%;
+    }
+}

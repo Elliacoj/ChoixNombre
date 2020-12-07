@@ -1,5 +1,4 @@
 let nombre = (Math.trunc(Math.random() * 100));
-console.log(nombre);
 let liste = document.getElementById("liste");
 let i = 10;
 let reponse = document.getElementById("reponse");
@@ -14,7 +13,6 @@ function jeu() {
     else if(parseInt(choix) === nombre) {
         alert("vous avez trouvé");
         nombre = (Math.trunc(Math.random() * 100));
-        console.log(nombre);
         while (liste.firstElementChild) {
             liste.removeChild(liste.firstElementChild);
         }
@@ -56,7 +54,6 @@ document.getElementById("valider").addEventListener("click", jeu);
 
 function reset() {
     nombre = (Math.trunc(Math.random() * 100));
-    console.log(nombre);
     while (liste.firstElementChild) {
         liste.removeChild(liste.firstElementChild);
     }
